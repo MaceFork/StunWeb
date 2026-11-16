@@ -14,7 +14,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 9.2.1
-      - run: unzip webstun-src.zip
+      - run: unzip AutoStunWeb.zip
       - run: gradle build --no-daemon
         working-directory: webstun-src
       - uses: actions/upload-artifact@v4
